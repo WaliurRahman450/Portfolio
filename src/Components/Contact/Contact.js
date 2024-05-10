@@ -31,6 +31,29 @@ const Contact = () => {
     <section className="contactPage">
       <div id="academics">
         <h1>Educational Background</h1>
+        <div className="academic">
+            <ul>
+                <li>DEGREE</li>
+                <li>INSTITUTE</li>
+                <li>GRADE</li>
+            </ul>
+            <ul>
+                <li>SSC</li>
+                <li><a href="http://www.sarsgss.edu.bd/" rel="noopener noreferrer" target="_blank"  style={{color:'yellow'}}>SARSGSS</a></li>
+                <li>GPA 5.00</li>
+            </ul>
+            <ul>
+                <li>HSC</li>
+                <li><a href="https://ndc.edu.bd/" rel="noopener noreferrer" target="_blank" style={{color:'yellow'}}>Notre Dame College,Dhaka</a></li>
+                <li>GPA 5.00</li>
+            </ul>
+            <ul>
+                <li>BSc</li>
+                <li><a href="https://www.butex.edu.bd/" rel="noopener noreferrer" target="_blank" style={{color:'yellow'}}>BUTex</a></li>
+                <li>3rd Semester</li>
+            </ul>
+        </div>
+
       </div>
       <div id="contact">
         <h1 className="contactPageTitle">Contact Me</h1>
