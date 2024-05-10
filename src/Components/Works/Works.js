@@ -9,7 +9,6 @@ import img6 from "./contact-us.png";
 import img7 from "./hard-music.png";
 import img8 from "./mosket.png";
 
-import { Link } from "react-scroll";
 
 const Works = () => {
   return (
