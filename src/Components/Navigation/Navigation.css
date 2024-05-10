@@ -8,21 +8,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 3;
 
 }
-.logo:hover{
-    padding: 1rem;
-}
+
 .logo{
     background-color: white;
     object-fit: cover;
     height: 5rem;
     padding: 4px;
     cursor: pointer;
+}
+.logo:hover{
+    padding: 1rem;
 }
 .desktopMenuListItem{
     
@@ -34,7 +34,7 @@
     color: yellow;
     padding-bottom: 0.1rem;
     border-bottom: 3px solid yellow;
-    position: relative;
+    
 }
 .desktopMenuBtn{
 
@@ -88,6 +88,7 @@
 @media screen and (max-width: 720px){
         .mobMenu{
             display: flex;
+            
         }
         .desktopMenu{
             display: none;
@@ -95,5 +96,4 @@
         .desktopMenuBtn{
             display: none;
         }
-        
 }
