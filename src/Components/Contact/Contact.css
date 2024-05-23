@@ -80,9 +80,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     list-style:none;
     margin-bottom: 1rem;
-    
     text-align: center;
-    
     border-bottom: 0.000001px solid rgb(60,60,60);
     
 }

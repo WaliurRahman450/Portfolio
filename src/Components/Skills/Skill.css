@@ -47,23 +47,62 @@
     font-weight: 200;
 }
 
-@media screen and (max-width:720px){
-    .skillBarText>p{
-        font-size: 2vw;
-
-    }
+.services-list {
+  margin: 0;
+  padding-top: 1.5rem;
+  
+  list-style: none; /* Remove default numbering */
 }
-@media screen and (max-width:480px){
-    .skillBarText>p{
-        font-size: 3vw;
-    }
-    .skillBarImg{
-        height: 2.25rem;
-        width: 2.25rem;
-    }
-    .skillBarText>p{
-        font-size: 5vw;
 
-    }
-    
+.services-list li {
+  display: inline-block;
+  margin-right: 2rem; /* Adjust margin for spacing */
+  font-weight: 50px;
+  line-height: 2rem;
 }
+
+/* Responsive Styles with Media Queries */
+
+/* Tablets (portrait & landscape) */
+@media only screen and (max-width: 768px) {
+    #skills {
+      max-width: 90%; /* Adjust max-width for larger tablets */
+    }
+    .skillTitle {
+      font-size: 2.5rem; /* Adjust heading size for tablets */
+    }
+    .skillDesc {
+      font-size: 0.9rem; /* Adjust description size for tablets */
+    }
+    .skillBars {
+      max-width: 100%; /* Ensure skill bars fit on smaller screens */
+    }
+    .skillBarText > p {
+      font-size: 1rem; /* Adjust font size for better readability */
+    }
+  }
+  
+  /* Mobile Phones (portrait) */
+  @media only screen and (max-width: 480px) {
+    #skills{
+        margin-left: 5rem;
+    }
+    .skillBarImg {
+      height: 2.25rem;
+      width: 2.25rem;
+    }
+    .skillBarText > p {
+      font-size: 1.2rem; /* Adjust font size for readability on mobiles */
+      line-height: 1.5; /* Adjust line-height for better spacing */
+    }
+    .skillBar {
+      flex-direction: column; /* Stack skill icon and text vertically on mobiles */
+      align-items: center;
+      text-align: center;
+    }
+    .skillBarImg {
+      margin: 0.5rem 0; /* Adjust margin for icon positioning */
+    }
+  }
+  
+  /* You can add more media queries for larger screens if needed */

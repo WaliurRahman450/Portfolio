@@ -81,9 +81,46 @@
     background-color: lightgray;
 
 }
-@media screen and (max-width: 585px)
-{
-    .worksImage{
-        height: 40vw;
+/* Media Queries for Responsiveness */
+
+/* Tablets (portrait & landscape) */
+@media only screen and (max-width: 768px) {
+    #works {
+      max-width: 90%; /* Adjust max-width for larger tablets */
     }
-}
+    .workTitle {
+      font-size: 2.5rem; /* Adjust heading size for tablets */
+    }
+    .worksDesc {
+      font-size: 0.9rem; /* Adjust description size for tablets */
+    }
+    .worksImages {
+      flex-direction: column; /* Stack cards vertically on tablets */
+    }
+    .card {
+      width: 100%; /* Make cards full width on tablets */
+      margin-bottom: 2rem; /* Add some margin between cards */
+    }
+    .worksImage {
+      height: 20rem; /* Adjust image height for tablets */
+    }
+  }
+  
+  /* Mobile Phones (portrait) */
+  @media only screen and (max-width: 585px) {
+    .worksImage {
+      height: 40vw; /* Adjust image height for mobiles */
+    }
+    .workBtn {
+      font-size: 0.8rem; /* Adjust button font size for mobiles */
+      padding: 0.3rem 1rem; /* Adjust button padding for mobiles */
+    }
+    .card{
+        margin-bottom: 5rem;
+    }
+    .redirect{
+        margin-top: 0.5rem;
+    }
+  }
+  
+  /* You can add more media queries for larger screens if needed */
